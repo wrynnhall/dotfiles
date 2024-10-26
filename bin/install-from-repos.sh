@@ -27,7 +27,8 @@ apt install -y \
 	ripgrep \
 	fd-find \
 	python3-pip \
-	restic
+	restic \
+	snapd
 
 
 snap install node --classic --channel=20
