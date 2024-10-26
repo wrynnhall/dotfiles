@@ -7,7 +7,7 @@ apt update && apt upgrade -y
 apt install -y \
 	git \
 	curl \
-	software-properties-commom \
+	software-properties-common \
 	zsh
 
 apt update
