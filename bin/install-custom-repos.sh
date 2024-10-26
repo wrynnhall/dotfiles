@@ -7,7 +7,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-dotnet tool install -g Yae.Tool
-dotnet new -i Yae.Templates
 
 
