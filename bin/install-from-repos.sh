@@ -20,7 +20,7 @@ apt install -y \
 	fzf \
 	unzip \
 	xclip \
-	ca-certificate \
+	ca-certificates \
 	jq \
 	dotnet-sdk-8.0 \
 	aspnetcore-runtime-8.0 \
