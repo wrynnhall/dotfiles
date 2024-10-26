@@ -2,7 +2,7 @@
 
 set -eu
 
-$(dirname $0)/bin/install-custom-repos.sh
+$(dirname $0)/install-custom-repos.sh
 
 apt update && apt upgrade -y
 
