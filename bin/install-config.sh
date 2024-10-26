@@ -2,18 +2,17 @@
 
 set -eu
 
-STOW_DIRS="$(ls */ -d | grep -Ev 'download|bin')"
-
-sudo -u $USER stow --dir=/home/$USER/dotfiles \
+stow --dir=/home/wrynn/dotfiles \
 	--ignore=downloads \
 	--ignore=bin \
-	${STOW_DIRS}
+	--adopt \
+	.
 
 groupadd docker || true
-usermod -aG docker $USER
+usermod -aG docker wrynn
 snap disable docker
 snap enable docker
 
 chsh -s $(which zsh)
 
-restic -r ~/restic-repo restore 84f368d7:/home/wrynn --target /home/$USER
+restic -r ~/restic-repo restore 84f368d7:/home/wrynn --target /home/wrynn
